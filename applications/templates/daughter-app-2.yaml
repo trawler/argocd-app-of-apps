@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: daugher-app-2
+  name: daughter-app-2
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -11,7 +11,7 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: daugher-app-2
+    path: daughter-app-2
     repoURL: https://github.com/trawler/argocd-example-apps
     targetRevision: {{ .Values.spec.source.targetRevision }}
   syncPolicy:
