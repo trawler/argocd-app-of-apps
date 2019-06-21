@@ -9,8 +9,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: applications
-    repoURL: https://github.com/trawler/argocd-example-apps.git
+    path: ./
+    repoURL: https://github.com/trawler/argocd-mother-of-all.git
   syncPolicy:
     automated:
       prune: true

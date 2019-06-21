@@ -5,4 +5,4 @@ This repository contains a working example of the "Application of Applications" 
 - The mother application calls the different daughter applications, defined in applications/templates.
 
 ## ArgoCD Diagram
-![](mother-of-all-diagram.png)
+![](diagram.png)
