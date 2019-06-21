@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: daughter-app-1-ui
+  name: daughter-app-2-ui
 spec:
   ports:
     - port: 80
       targetPort: 80
   selector:
-    app: daughter-app-1-ui
+    app: daughter-app-2-ui
