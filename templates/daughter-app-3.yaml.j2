@@ -4,15 +4,15 @@ metadata:
   name: daughter-app-3
   namespace: argocd
   finalizers:
-    - resources-finalizer.argocd.argoproj.io
+    - {{ .Values.metadata.finalizer }}
 spec:
   destination:
     namespace: argocd
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: applications/daughter-app-3
-    repoURL: https://github.com/trawler/argocd-mother-of-all
+    path: {{ .Values.spec.source.path }}/daughter-app-3
+    repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
   syncPolicy:
     automated:

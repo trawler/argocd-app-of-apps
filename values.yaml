@@ -1,5 +1,9 @@
+metadata:
+  finalizer: resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     server: https://kubernetes.default.svc
   source:
+    repoURL: https://github.com/trawler/argocd-mother-of-all
+    path: applications
     targetRevision: HEAD
