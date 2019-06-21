@@ -1,20 +1,20 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: daughter-app-3
+  name: daughter-app-4
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: daughter-app-3
+      app: daughter-app-4
   template:
     metadata:
       labels:
-        app: daughter-app-3
+        app: daughter-app-4
     spec:
       containers:
         - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
-          name: daughter-app-3
+          name: daughter-app-4
           ports:
             - containerPort: 80
